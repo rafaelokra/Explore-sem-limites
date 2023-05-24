@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 1440px;
+    height: 2101px;
+}
+.astronaut{
+   
+    width: 1440px;
+    height: 836px;
+}
+.astronaut img{
+    position: absolute;
+    width:720px ;
+    height: 732px;
+    left: 691px;
+}
+h1{
+    position: absolute;
+    width: 554px;
+    height: 73px;
+    top: 312px;
+    left: 109px;
+    color: #B52184;
+
+    font-weight: 900;
+    font-size: 58px;
+    font-family: 'Mulish', sans-serif;
+}
+.txt p{
+    width: 530px;
+    height: 23px;
+
+    position: absolute;
+    left: 109px;
+    top: 393px;
+
+    font-weight: 600;
+    font-size: 32px;
+}
+.rectagem img{
+
+    position: absolute;
+    width: 58px;
+    height: 105px;
+    top:595px;
+    left: 109px;
+}
+.vector img{
+    position: absolute;
+    width: 30px;
+    height: 45px;
+    top: 625px;
+    left: 123px;
+}
+.moon{
+    display: grid;
+    grid-template-areas: "moon1 moon2 moon3";
+    width: 1440px;
+    height: 576px;
+
+    background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+}
+.moon image{
+  
+    width: 97px;
+    height: 97px;
+}
+.moon div :nth-child(1) {
+    grid-area: moon1;
+    width: 366px;
+    height: 448px;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+
+
+    background: #FFFFFF;
+   
+}
+.moon div :nth-child(2){
+    grid-area: moon2;
+   
+
+
+    background: #FFFFFF;
+}
+.moon div :nth-child(3){
+    grid-area: moon3;
+   
+   
+    
+    background: #FFFFFF;
+}
+ 
+.moon h3{
+    width: 279px;
+    height: 25px;
+
+    font-weight: 900;
+    font-size: 35.3022px;
+
+    font-family: 'Mulish';
+    color: #B52184;
+}
+.moon p{
+    width: 321px;
+    height: 158px;
+}
