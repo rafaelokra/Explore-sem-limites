@@ -2,13 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-
+/* grup astronaut*/
 body{
     width: 1440px;
     height: 2101px;
 }
+
 .astronaut{
    
     width: 1440px;
@@ -20,17 +23,20 @@ body{
     height: 732px;
     left: 691px;
 }
-h1{
+.txt h1{
     position: absolute;
     width: 554px;
     height: 73px;
-    top: 312px;
     left: 109px;
-    color: #B52184;
+    top: 312px;
 
+    font-family: 'Mulish';
+    font-style: normal;
     font-weight: 900;
-    font-size: 58px;
-    font-family: 'Mulish', sans-serif;
+    font-size: 58.287px;
+    line-height: 73px;
+
+    color: #B52184;
 }
 .txt p{
     width: 530px;
@@ -40,8 +46,10 @@ h1{
     left: 109px;
     top: 393px;
 
+    font-family: 'Mulish';
     font-weight: 600;
     font-size: 32px;
+    color: #312D64;
 }
 .rectagem img{
 
@@ -58,59 +66,192 @@ h1{
     top: 625px;
     left: 123px;
 }
-.moon{
-    display: grid;
-    grid-template-areas: "moon1 moon2 moon3";
-    width: 1440px;
-    height: 576px;
-
-    background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
-}
-.moon image{
-  
-    width: 97px;
-    height: 97px;
-}
-.moon div :nth-child(1) {
-    grid-area: moon1;
-    width: 366px;
-    height: 448px;
-   
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 32px;
-
-
-    background: #FFFFFF;
-   
-}
-.moon div :nth-child(2){
-    grid-area: moon2;
-   
-
-
-    background: #FFFFFF;
-}
-.moon div :nth-child(3){
-    grid-area: moon3;
-   
-   
+#cards{
     
-    background: #FFFFFF;
-}
- 
-.moon h3{
-    width: 279px;
-    height: 25px;
+   display: grid;
+    grid-template-areas: "A B C";
+    
+    width:100%;
+    height: 100%;
+    padding: 5.3rem 3.9rem 5.5rem;
+    top: 836px;
+    background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+    gap: 4.9rem;
+} 
 
+/* card moon*/
+
+#cards .card{
+  
+    background: white;
+    padding: 2.6rem;
+    border-radius: 2rem;
+}
+#cards .card img{
+    width: 8rem;
+    margin-bottom: 3.3rem;
+  }
+
+  #cards .card .card-text {
+    width: 300px;
+    font-family: Mulish;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .card h3{
+  padding-bottom: 24px;
+    font-family: 'Mulish';
     font-weight: 900;
     font-size: 35.3022px;
+    line-height: 44px;
+
+    color: #B52184;
+  }
+  .card p{
+    color: #312D64;
+  }
+
+  /*form*/
+
+form{
+    width: 1440px;
+    height: 612px;
+    top: 1412px;
+    
+}
+
+.contat h2{
+    margin-top: 95px;
+    margin-left: 109px;
 
     font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 53px;
+
     color: #B52184;
 }
-.moon p{
-    width: 321px;
-    height: 158px;
+.hidden-form,fieldset {
+
+    border: none;
+  }
+  .input-wapper input,
+    .input-wapper {
+    border: none;
 }
+ #name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px 12px 14px;
+    gap: 12px;
+
+    width: 592px;
+    height: 48px;
+    margin-left: 112px;
+    margin-top: 30px;
+    
+    border: 1.5px solid #312D64;
+    border-radius: 16px;
+}
+
+ .input-wapper .vector1{
+    position: absolute;
+    margin-left: 17%;
+    top: 188%;
+    bottom: 6.25%;
+   
+}
+ #email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px 12px 14px;
+    gap: 12px;
+
+    
+    width: 592px;
+    height: 48px;
+    margin-left: 112px;
+    margin-top: 30px;
+
+    border: 1.5px solid #312D64;
+    border-radius: 16px;
+
+ }
+ textarea{
+        display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 16px 16px;
+    gap: 10px;
+
+
+    width: 592px;
+    height: 126px;
+    margin-left: 112px;
+    margin-top: 30px;
+
+    border: 1.5px solid #312D64;
+    border-radius: 16px;
+ }
+ .stars img{
+    position: absolute;
+    width: 644px;
+    height: 612px;
+    margin-left: 796px;
+    top:1654px;
+ }
+ button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+
+
+    width: 151px;
+    height: 45px;
+    margin-left: 112px;
+    margin-top: 10.5px;
+
+    background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+    border-radius: 16px;
+
+    color: #FFFFFF;
+
+    font-family: 'Mulish';
+    cursor: pointer;
+ }
+ button:hover{
+    background: #19175c;
+    transition:  1.55 all ease;
+ }
+ 
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    width: 1440px;
+    height: 78px;
+    margin-left: 0px;
+    top: 2023px;
+
+    background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+    color: #FFFFFF;
+}
+
+
+  
