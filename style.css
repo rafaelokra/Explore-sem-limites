@@ -1,3 +1,7 @@
+@charset "UTF-8";
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -142,25 +146,43 @@ form{
 }
  #name{
     display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 12px 16px 12px 14px;
     gap: 12px;
-
     width: 592px;
     height: 48px;
     margin-left: 112px;
     margin-top: 30px;
     
+
     border: 1.5px solid #312D64;
     border-radius: 16px;
+    
+}
+#name::placeholder{
+    text-align: center;
+    margin: 3.7px auto;
+}
+#email::placeholder{
+    text-align: center;
+    margin: 3.7px auto;
 }
 
+.input-wapper{
+    position: relative;
+}
  .input-wapper .vector1{
     position: absolute;
-    margin-left: 17%;
-    top: 188%;
-    bottom: 6.25%;
+    margin-left:9.5%;
+    top:27%;
+    
+}
+
+.input-wapper .vector2{
+   position: absolute;
+    margin-left:9.5%;
+    top:29%;
+   
+
    
 }
  #email{
@@ -253,5 +275,15 @@ footer{
     color: #FFFFFF;
 }
 
+.input-wapper  input::placeholder{
+    position: absolute;
+    left: 50px;
+    align-items: center;
+    justify-content: center;
+}
 
-  
+
+
+
+
+
